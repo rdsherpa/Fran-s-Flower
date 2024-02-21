@@ -1,0 +1,106 @@
+
+
+/* Improved contrast for better readbility */
+body {
+    color: #333; /* added Dark text color */
+    background-color: #FBF9F1;  /*Light Background color  */
+    font-family: "Arial", sans-serif;
+   
+}
+
+/* Header styles  */
+header {
+  color: #4E9F3D; /* Dark green header text color */
+  font-family: 'Dancing Script',     cursive;
+  font-size: 36px;
+}
+
+/*Horizontal rule styles  */
+hr {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #3468C0; /* Double line with blue color */
+    color: #333;
+    text-align: center;
+}
+
+/* Customization for the :after pseudo-element of hr */
+hr:after {
+    content: "❀"; /* Flower symobl after the hr */
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #4E9F3D; /* Dark green background color for the flower symbol */
+}
+
+h2 {
+  font-family: 'Abril Fatface', serif;
+  letter-spacing: 3px;
+}
+
+#donation {
+  color: #D21312; /* added the text with red color so that it will show the mission statement */
+}
+
+h5 {
+  text-decoration: line-through;
+}
+
+address {
+  font-weight: bold;
+}
+
+/* Responsive font size */
+body {
+  font-size: 16px; /* I used this size because this is the base font size */
+}
+
+/* Making links accessible */
+a {
+   color: #4E9F3D; /* Dark green link color */
+}
+
+/* This is to ensure focus styles are clearly visible */
+ :focus {
+   outline: 2px solid #0073e6; /* Adding a visible focus indicator */
+ }
+
+
+/* I added this so that it is responsive in all the device*/
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjusting font size for smaller screens */
+    }
+
+    header {
+        font-size: 24px; /* Adjusting header font size */
+    }
+
+    /*Stacking elements in smaller screens */
+    .pricing-table {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    /* Adjusting map size for smaller screens */
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Additional responsiveness for larger screens */
+@media screen and (min-width: 1200px) {
+    /* Increasing font size for larger screens */
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        font-size: 42px;
+    }
+}
